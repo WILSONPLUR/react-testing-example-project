@@ -10,6 +10,13 @@ function App() {
       <Navbar />
       <main>
         <h1 data-testid="main-content">Main content</h1>
+        <span data-testid="main-count">{count}</span>
+        <button
+          data-testid="main-button"
+          onClick={() => setCount((prevCount) => prevCount + 1)}
+        >
+          +
+        </button>
       </main>
     </div>
   );
